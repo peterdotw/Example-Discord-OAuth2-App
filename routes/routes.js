@@ -5,7 +5,7 @@ const authHandler = require("../auth");
 
 router.get("/", (_, res) => res.sendFile());
 
-router.get("/auth/login", (_, res) =>
+router.get("/auth/discord/login/", (_, res) =>
   res.redirect(
     "https://discordapp.com/api/oauth2/authorize" +
       "?client_id=" +
